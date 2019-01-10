@@ -33,8 +33,8 @@ class ViewController: UIViewController {
   }()
 
   func generateContentLink() -> URL {
-    let baseURL = URL(string: "https://firebase.google.com")!
-    let domain = "https://u94xz.app.goo.gl"
+    let baseURL = URL(string: "https://your-custom-name.page.link")!
+    let domain = "https://your-app.page.link"
     let linkBuilder = DynamicLinkComponents(link: baseURL, domainURIPrefix: domain)
     linkBuilder?.iOSParameters = DynamicLinkIOSParameters(bundleID: "com.firebase.uidemo")
     linkBuilder?.androidParameters =
